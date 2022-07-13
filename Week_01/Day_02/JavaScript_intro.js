@@ -57,9 +57,9 @@
     // === strict comparison
     
 //Strings
-    console.log(`the number is ${number}`); //use the backticks ${variable name}
-    ""
-    ''
+    // console.log(`the number is ${number}`); //use the backticks ${variable name}
+    // ""
+    // ''
     // let x = "feas"
     // x.
 //booleans
@@ -69,9 +69,9 @@
     // if (expression) {
     //     statement
     // }
-    if (0) {
-        console.log("that was true");
-    }
+    // if (0) {
+    //     console.log("that was true");
+    // }
     //truthy and falsy
     // ""
     // 0
@@ -82,13 +82,13 @@
     
 //OBJECT TYPES
     //Arrays
-        let b = [12, "the", true, [0,12,12], {p: [12,0]}]
+        //let b = [12, "the", true, [0,12,12], {p: [12,0]}]
             //   0   1     2     ......
         
     // //Objects
-        {
-            prop: []
-        }
+        // {
+        //     prop: []
+        // }
     // //functions
     //     //set of an instructions
     //     function greet(name) {
