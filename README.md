@@ -17,4 +17,6 @@ Welcome to our class repository! This is where we will store all of the lecture 
 |Week 1 Day 1| Orientation | tbd |
 |Week 1 Day 2| Week One Day 2 (Terminal, Syntax, Git) part 1 | https://youtu.be/-ifDoHbFgJE |
 |Week 1 Day 2| Week One Day 2 (User Input and extra git) part 2 | https://youtu.be/8r_lsWbApgU |
+|Week 1 Day 3| Week One Day 3 (Conditionals and Loops) | https://youtu.be/7MJBnCZDgPs |
+
 
