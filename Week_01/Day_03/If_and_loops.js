@@ -27,10 +27,10 @@
 //     statement;
 // }
 
-let temperature = "100"
-if (temperature > 90) {
-    console.log("oh boy another day in Texas");
-}
+// let temperature = "100"
+// if (temperature > 90) {
+//     console.log("oh boy another day in Texas");
+// }
 
 // Else statement syntax
 // if ( condition ) {
@@ -73,8 +73,8 @@ for loop is better when you know there is a set amount of
 times you want to loop
 
 -for ---> loops through a block of code a number of times
--for in --> loops through the properties of an object
--for of ---> loops throught the values of an iterable object
+-for in --> loops through the properties of an object {}
+-for of ---> loops throught the values of an iterable object (like arrays, maps, strings)
 -while* ---> loops through a block of code while a specified condition is true
 -do while ---> statement gets run at least once then check condition
 
@@ -130,6 +130,8 @@ for (const letter of word) {
 // 0 1 2 3 4
 //[h,e,l,l,o]
 
+
+
 //for in loop is for objects
 let not_map = {
     a: 1,
@@ -139,4 +141,9 @@ let not_map = {
 for (const key in not_map) {
     console.log(not_map[key]);
 }
+
+
+//var X ---> hoisting
+//let 95% ---> block scope variables
+//const ---> a variable that you know arent going to change
 
