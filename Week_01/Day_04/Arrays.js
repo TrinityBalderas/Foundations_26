@@ -142,7 +142,7 @@ let slice_em_up = [1,2,3,4,5]
 console.log(slice_em_up.slice(0,3));
 console.log(slice_em_up.slice(3));
 console.log(slice_em_up.slice(1,-1));
-console.log(slice_em_up.slice(-2,-1));
+
 
 
 
@@ -153,7 +153,7 @@ console.log(slice_em_up.slice(-2,-1));
 //                  0 1 2 3 4
 let splice_em_up = [1,2,3,4,5]
 // splice_em_up.splice(3,2, [1,2])
-splice_em_up.splice(2,1)
+splice_em_up.splice(2,1,[2,2])
 console.log(splice_em_up);
 
 // splice() can delete elements from an array, insert new elements into an array, 
