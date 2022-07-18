@@ -12,16 +12,28 @@
 //ANATOMY OF A FUNCTION
 
 //keyWord  name_of_function         parameters(if any)
+// let obj = {}
+// obj.daniels_function = function your_first_function(name_input, favorite_number) {
+//     //body of function is inside the curly brackets
+//     let return_string = `your name is ${name_input}, and your fave num is ${favorite_number}`;
+//     // return undefined//if no return is stated the default is undefined
+//     return return_string
+// }
 function your_first_function(name_input, favorite_number) {
     //body of function is inside the curly brackets
-    console.log(`your name is ${name_input}, and your fave num is ${favorite_number}`);
-    //if no return is stated the default is undefined
+    let return_string = `your name is ${name_input}, and your fave num is ${favorite_number}`;
+    // return undefined//if no return is stated the default is undefined
+    return return_string
 }
-let name_argument = "Kelvin"
+// console.log(obj.daniels_function("kelvin", 11))
+let name_argument = { name:"Kelvin" }
 let favorite_number_argument = 11
 //CALLING A FUNCTION
 //            name_of_function()----->arguments(if any)
-console.log(your_first_function(name_argument, favorite_number_argument));
+console.log(your_first_function(name_argument,favorite_number_argument));
+//console logging functions prints a functions return statement'
+console.log("hello");
+
 
 //DEFINING FUNCTIONS
 //use the function keyword to be used as a declaration or an expression
@@ -29,10 +41,13 @@ console.log(your_first_function(name_argument, favorite_number_argument));
 //FUNCTION DECLERATIONS
 
 //key_word identifier(parameters)
+console.log(add_numbers(2,2))
 function add_numbers(num1, num2) {
     //statements
     return num1 + num2
 }
+let four = add_numbers(2,2)
+console.log(add_numbers);
 //the name of the function becomes a variable whose value is the function
 
 //FUNCTION EXPRESSIONS
@@ -40,12 +55,16 @@ function add_numbers(num1, num2) {
 //of a larger expression or statement, and the name is optional. Here are some example 
 
 //assigning a function to a variable
-const square = function (x) {
+const square = function(x) {
     return x * x;
 };
 console.log(square(10));
+
+// let sorted_array = [33,222,11,10].sort()
+// console.log(sorted_array);
 //function expressions can also be used as arguments to other functions
-console.log([3, 2, 1].sort(function (a, b) { return a - b; }));
+console.log([3, 2, 1].sort(function(a, b) { return a - b; }));
+
 //function expressions can be immediately invoked, neat
 let tensquared =
     function (x) {
@@ -62,12 +81,16 @@ console.log(tensquared);
 
 const sum = (number1, number2) => {
     return number1 + number2;
+    // return undefined
 }
+let value = sum(2,2)
+console.log(value);
 
 //if there is a single return statement the return key word, and curly braces can be omitted 
 const sum2 = (number1, number2) => number1 + number2;
 
 //if the arrow function has 1 parameter you can also omit the ()
+//name_of_func    =  params => statements
 const square_again = num_to_square => num_to_square ** 2
 
 // Arrow functions differ from functions defined in other ways in one critical way: 
@@ -87,11 +110,11 @@ function hypotenuse(a, b) {
 
     function square(x) {
 
-        for (let i = 0; i < 3; i++) {
-            //console.log(`we are block scoped thanks to i ${i}\n. a is: ${a} and b is: ${b}`);
-
-        }
-
+        // for (let i = 0; i < 3; i++) {
+        //     //console.log(`we are block scoped thanks to i ${i}\n. a is: ${a} and b is: ${b}`);
+            
+        // }
+        // console.log(global_variable);
         return x * x;
 
     }
@@ -101,6 +124,7 @@ function hypotenuse(a, b) {
 }
 
 console.log(hypotenuse(2, 2));
+
 
 //INVOKING FUNCTIONS
 //The JavaScript code that makes up the body of a function is not executed when the function 
@@ -112,23 +136,36 @@ hypotenuse(3, 2);
 //method invocation
 //methods are just functions attached to an object
 let obj_example = {
+    //hello_world: function()  { console.log("hello world"); } //function expressions
     hello_world: () => { console.log("hello world"); }
 }
 obj_example.hello_world()
 
 
 
-// let o = {                 // An object o.
-//     m: function() {       // Method m of the object.
-//         console.log(this === o)
-//         f();              // Now call the helper function f().
 
-//         function f() {    // A nested function f
-//             console.log(this === o)  
-//         }
-//     }
-// };
-// o.m();                // Invoke the method m on the object o.
+
+
+
+
+
+
+
+console.log("---------------------------");
+
+let o = {   
+    //this = obj o              // An object o.
+    m: function() {       // Method m of the object.
+        console.log(this === o) //true
+        
+        let f = () => {    // A nested function f
+            console.log(`this is: ${this}`);
+            console.log(this === o) //false?
+        }
+        f();              // Now call the helper function f().
+    }
+};
+o.m();                // Invoke the method m on the object o.
 
 
 

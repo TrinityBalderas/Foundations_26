@@ -12,7 +12,7 @@
 // Boolean(), Number(), and String() functions
 
 
-Number("3") // => 3
+Number("3") // => 3 parseInt()
 String(false)  // => "false":  false.toString()
 Boolean([])    // => true (!![])
 
@@ -29,7 +29,7 @@ console.log(typeof converted_string);
 // console.log(3 + []); // 3 + 0
 // console.log(12 + "12");
 //plus operand also acts as concat
-
+//           true && false ---> false
 
 //what happens when we use a loose comparison?? well look at the table!
 //JAVASCRIPT TYPE CONVERSIONS
@@ -49,7 +49,7 @@ console.log(typeof converted_string);
 //NaN                           "NaN"                               false
 //{} (any object)               complicated         complicated     true
 //[] (empty array)              ""                  0               true
-//[9] (one numeric element)     "9"                 9               true
+//[9,8] (one numeric element)     "9,8"                 9               true
 //['a'] (any other array)       "a"                 NaN             true
 //function(){} (any function)   complicated         NaN             true
 
@@ -63,28 +63,31 @@ let t1 = true
 let t2 = true
 let f1 = false
 let f2 = false
-//          
-let test1 = 0 && 1
+//              ----> true: t2
 console.log(t1 && t2);
-//          
+//              ----> true: t1
 console.log(t2 && t1);
-//         
+//              ----> false: f1
 console.log(t1 && f1);
-//          
+//              ----> false: f1
 console.log(f1 && t1);
-//         
+//              ----> false: f1
 console.log(f1 && f2);
-//         
+//              ----> false: f2
 console.log(f2 && f1);
 
-//                
-let_add_falsy = (0 && undefined) + 2
 
-//               
-let_add_truthy = ("1.2" && true) + 2
+//                     (false) + 2  ----> 0 + 2 --> 2
+let let_add_falsy = (0 && undefined) + 2
+console.log(let_add_falsy);   //2      
+
+//                        (true) + 2 ---> 1 + 2 ---> 3
+let let_add_truthy = ("1.2" && true) + 2
+console.log(let_add_truthy);
 
 //what would this return
-((1 && 2) && (false && false))
+console.log(((1 && 2) && (false && false)))
+
 
 // The || operator performs the Boolean OR operation on its two operands. 
 // If one or both operands is truthy, it returns a truthy value. 
@@ -96,12 +99,16 @@ let_add_truthy = ("1.2" && true) + 2
 // If, on the other hand, the value of the first operand is falsy, 
 // then || evaluates its second operand and returns the value of that expression.
 // true || false --> true
+
+
 console.log("1.2" || 1);
 
 console.log(0 || NaN);
 
 console.log(!false);
 console.log(!true);
+
+
 // avoid right side operands with side effects
 let truthy = [1]
 let falsy = null

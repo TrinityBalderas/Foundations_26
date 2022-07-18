@@ -29,6 +29,9 @@ let string1 = "im unique", string2 = "i guess i am"
 
 //SOME AWESOME METHODS FOR STRINGS
 let practice_with_some_strings = "Hello, world"
+//an object wrapper around all primitives String(practice_with_some_strings)
+
+
 //obtaining portions of a string
 //substring and return "ell" ----->
 console.log(practice_with_some_strings.substring(1,4));  
