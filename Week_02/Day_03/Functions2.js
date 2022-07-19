@@ -54,3 +54,51 @@ console.log(find_a_plus_b_squared(2,2,suare_root_this_num));
 
 
 //HIGHER ORDER FUNCTION
+// A function that takes 1+ function(s) as an argument and/or returns a function
+// They have similar benefits to callbacks: flexibility and reusability
+// You’ve already seen them: they’re the outer functions in the callback examples
+
+function B(){
+    console.log("Inside the method B. called from B")
+} 
+// first method that return second method
+function A(){
+    console.log("Inside the method B. called from A")
+    // return second method
+    return B
+}
+// form a object of first method
+// i.e; second method
+returned_function = A()
+ 
+// call second method by first method
+returned_function()
+
+// Higher Order Array Methods
+// Functions built into JavaScript that accept callbacks as arguments
+// We will cover forEach, map, filter, and reduce
+// Note: not all higher order functions have to work with arrays, there are others (setTimeout, addEventListener, etc.)
+
+let names = ["Alejandro", "Alex", "Trinity", "Kiara", "Sarah", "Daniel"]
+
+let each_name = names.map((one_name) =>  one_name )
+let hello_each_name = names.map((one_name) => "hello " + one_name)
+let each_name_and_index = names.map((one_name,idx) =>  one_name + " " + idx)
+
+let each_name_loop = []
+for (let i = 0; i < names.length; i++) {
+    each_name_loop.push(names[i])    
+}
+console.log(each_name_loop);
+
+let hello_names = []
+for (let i = 0; i < names.length; i++) {
+    hello_names.push(`hello ${names[i]}`)
+}
+console.log(hello_names);
+
+let each_name_index = []
+for (let i = 0; i < names.length; i++) {
+    each_name_index.push(`${names[i]} ${i}`)
+}
+console.log(each_name_index);
