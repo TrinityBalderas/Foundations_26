@@ -23,4 +23,6 @@ https://youtu.be/TGco0lRperA
 |Week 2 Day 1| Week 2 Day 1 (Intro To Strings part 2) | https://youtu.be/kYGkwLQyzYg |
 |Week 2 Day 1| Week 2 Day 1 (Type Conversions) | https://youtu.be/wT1AjCq1X8w |
 |Week 2 Day 1| Week 2 Day 1 (Intro To Functions) | https://youtu.be/kn28-wtZ-d4 |
+|Week 2 Day 2| Week 2 Day 2 (LuckyNumbers Review) | https://youtu.be/zgtzPP4BT8s |
+|Week 2 Day 2| Week 2 Day 2 (Objects Intro Part 1) | https://youtu.be/wdaI6DaQDxw |
 
