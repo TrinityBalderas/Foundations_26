@@ -44,3 +44,13 @@ function suare_root_this_num(a_plus_b_squared) {
 }
 
 console.log(find_a_plus_b_squared(2,2,suare_root_this_num));
+
+
+// we can also write callback functions inline
+// function hypotenuse(a, b, square_function) {
+//     return Math.sqrt(square_function(a) + square_function(b));
+// }
+// console.log(hypotenuse(2, 2, (n) => n ** 2));
+
+
+//HIGHER ORDER FUNCTION
