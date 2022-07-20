@@ -56,4 +56,3 @@ let second_flying = pokémon.filter( ( pokemon_object ) => pokemon_object.types[
 
 
 
-// a  count of the number of pokemon that are normal type

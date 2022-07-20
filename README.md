@@ -27,5 +27,10 @@ https://youtu.be/TGco0lRperA
 |Week 2 Day 2| Week 2 Day 2 (Objects Intro) | https://youtu.be/wdaI6DaQDxw |
 |Week 2 Day 2| Week 2 Day 2 (Class Intro) | https://youtu.be/HO6IbhqVJfk |
 |Week 2 Day 2| Week 2 Day 2 (Review) | https://youtu.be/hyDkqE9H96c |
+|Week 2 Day 3| Week 2 Day 3 (Morning Challenge Review) | https://youtu.be/HZcWegCLMwM |
+|Week 2 Day 3| Week 2 Day 3 (Intro To Callbacks) | https://youtu.be/ZV7NLrrJ5zo |
+|Week 2 Day 3| Week 2 Day 4 (Higher Order Method Practice Part 1) | https://youtu.be/LeDB2OkjpDU |
+|Week 2 Day 3| Week 2 Day 4 (Higher Order Method Practice Part 2) | https://youtu.be/bnpUx88fK64 |
+
 
 
