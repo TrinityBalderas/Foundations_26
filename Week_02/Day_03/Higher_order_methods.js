@@ -10,8 +10,9 @@ let data = [1,2,3,4,5]
 let sum = 0;
 
 // Compute the sum of the elements of the array
-data.forEach(value => { sum += value; });          // sum == 15
-
+data.forEach((number) => sum += number)
+//data.forEach(value => { sum += value; });          // sum == 15
+console.log(sum);
 // Now increment each array element
 data.forEach(function(v, i, a) {
     console.log(`this is a: ${a}, this is i: ${i}, this is v: ${v}`);
@@ -26,8 +27,14 @@ data.forEach(function(v, i, a) {
 // sparse in the same way as the original array
 
 let a = [1, 2, 3];
-let new_array = a.map(x => x*x)   // => [1, 4, 9]: the function takes input x and returns x*x
+let new_array = a.map(number => number*number)   // => [1, 4, 9]: the function takes input x and returns x*x
 console.log(new_array);
+
+let names = ["Alejandro", "Alex", "Trinity", "Kiara", "Sarah", "Daniel"]
+
+let each_name = names.map((one_name) =>  one_name )
+let hello_each_name = names.map((one_name) => "hello " + one_name)
+let each_name_and_index = names.map((one_name,idx) =>  one_name + " " + idx)
 
 //FILTER
 // The filter() method returns an array containing a subset of the elements of the array on which 
@@ -35,10 +42,11 @@ console.log(new_array);
 // or false. The predicate is invoked just as for forEach() and map(). If the return value is true, 
 // or a value that converts to true, then the element passed to the predicate is a member of 
 // the subset and is added to the array that will become the return value. Examples:
-
+//       0  1  2  3  4
 let b = [5, 4, 3, 2, 1];
-let less_than_three = b.filter(x => x < 3)         // => [2, 1]; values less than 3
-let every_other = b.filter((x,i) => i%2 === 0) // => [5, 3, 1]; every other value
+//                           () =>
+let less_than_three = b.filter((number) => number < 3)         // => [2, 1]; values less than 3
+let every_other = b.filter( (number, i) => i % 2 === 0) // => [5, 3, 1]; every other value
 
 //REDUCE
 // reduce() takes two arguments. The first is the function that performs the reduction operation. 
@@ -46,9 +54,15 @@ let every_other = b.filter((x,i) => i%2 === 0) // => [5, 3, 1]; every other valu
 // single value and to return that reduced value.
 
 let c = [1,2,3,4,5];
-let reduce_sum = c.reduce((x,y) => x+y,0)         // => 15; the sum of the values
+
+let reduce_sum = c.reduce((prev_value, curr_value) => prev_value + curr_value, 0)
+console.log(reduce_sum);
+//let reduce_sum = c.reduce((x,y) => x+y,0)         // => 15; the sum of the values
 c.reduce((x,y) => x*y, 1)          // => 120; the product of the values
+//google ternary expressions
 c.reduce((x,y) => (x > y) ? x : y) // => 5; the largest of the values
+
+
 console.log(c.reduce((x,y) => {
     if ( x > y ) {
         return x
@@ -65,6 +79,6 @@ console.log(reduce_sum);
 //CHAINING METHODS
 // Methods can be chained together, allowing you to perform multiple operations on one array concisely
 const numArray = [0, 1, 2, 3, 4]
-
+//let arr = [3,4] ---> [9,12] ---> -3
 const myNum = numArray.filter(num => num > 2).map(num => num * 3).reduce((acc, curr) => acc - curr)
 console.log(myNum);
