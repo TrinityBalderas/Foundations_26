@@ -70,7 +70,11 @@ function A(){
 // form a object of first method
 // i.e; second method
 returned_function = A()
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 155d161bf90734965428be3a9daecce019aca83a
 // call second method by first method
 returned_function()
 
@@ -81,6 +85,13 @@ returned_function()
 
 let names = ["Alejandro", "Alex", "Trinity", "Kiara", "Sarah", "Daniel"]
 
+<<<<<<< HEAD
+=======
+let each_name = names.map((one_name) =>  one_name )
+let hello_each_name = names.map((one_name) => "hello " + one_name)
+let each_name_and_index = names.map((one_name,idx) =>  one_name + " " + idx)
+
+>>>>>>> 155d161bf90734965428be3a9daecce019aca83a
 let each_name_loop = []
 for (let i = 0; i < names.length; i++) {
     each_name_loop.push(names[i])    
@@ -98,6 +109,7 @@ for (let i = 0; i < names.length; i++) {
     each_name_index.push(`${names[i]} ${i}`)
 }
 console.log(each_name_index);
+<<<<<<< HEAD
 
 //we are not executing DRY we are repeating core logic a lot with these three examples
 //the core logic is making a new array and then just pushing into it every iteration
@@ -144,3 +156,5 @@ let each_name_and_index = names.map((one_name,idx) =>  one_name + " " + idx)
 // const square = x => x*x;
 // compose(square, sum)(2,3)  // => 25; the square of the sum
 
+=======
+>>>>>>> 155d161bf90734965428be3a9daecce019aca83a
