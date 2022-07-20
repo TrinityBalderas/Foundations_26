@@ -44,25 +44,31 @@ function square_root_this_num(a_plus_b_squared) {
     return Math.sqrt(a_plus_b_squared)
 }
 
-console.log(find_a_plus_b_squared(2,2,square_root_this_num));
+//console.log(find_a_plus_b_squared(2,2,square_root_this_num));
+//                       string  f()
+const greetingMachine = (name,greeting) => {
+    return greeting(name)
+}
 
-// const greetingMachine = (name,greeting) => {
-//     return greeting(name)
-// }
+const hello = name => {
+    console.log(`Hello, ${name}!`)
+}
+const sup = name => {
+    console.log(`'Sup, ${name}?`)
+}
+const yo = name => {
+    console.log(`Yo, ${name}!`)
+}
+const goodmorning = name => {
+    console.log(`Good morning, ${name}!`)
+}
+greetingMachine("Colin",yo);
 
-// const hello = name => {
-//     console.log(`Hello, ${name}!`)
-// }
-// const sup = name => {
-//     console.log(`'Sup, ${name}?`)
-// }
-// const yo = name => {
-//     console.log(`Yo, ${name}!`)
-// }
-// const goodmorning = name => {
-//     console.log(`Good morning, ${name}!`)
-// }
-// greetingMachine("Not Colin",sup);
+const addTen = num => {
+    console.log(num + 10) 
+}
+
+greetingMachine(26, addTen)
 
 // we can also write callback functions inline
 // function hypotenuse(a, b, square_function) {
@@ -127,3 +133,26 @@ console.log(each_name_index);
 let each_name = names.map((one_name) =>  one_name )
 let hello_each_name = names.map((one_name) => "hello " + one_name)
 let each_name_and_index = names.map((one_name,idx) =>  one_name + " " + idx)
+
+
+////////// PROBLEM 2 //////////
+
+/*
+  Write a function called first that takes in two parameters, an array and a callback function.
+  Then invoke the callback function, passing in the first element in the array as it's argument.
+*/
+let names_array = ["josh","colin"]
+// CODE HERE 
+const first = (array_input, callback) => {
+    //doing stuff here
+    callback(array_input[0])
+}
+
+// UNCOMMENT THE FUNCTION CALL BELOW
+// RUN THIS FILE WITH NODE
+// CHECK YOUR ANSWER
+let call_first_name = first_name => {
+    console.log('The first name in names is ' + first_name)
+}
+
+first(names_array, call_first_name)
