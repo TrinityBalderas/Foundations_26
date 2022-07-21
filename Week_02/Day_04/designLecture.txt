@@ -1,0 +1,116 @@
+Design
+
+What does design mean to you?
+
+How something is constructed -- in appearance
+Making things pretty and organized
+Plan a process
+A blueprint
+
+
+Important questions:
+
+Is the site accessible?
+How is the user experience?
+Does the website seem trustworthy?
+Is it attractive?
+
+
+
+User Experience
+
+How does the user feel when using your site/app?
+The goal -- Easy to use, positive and meaningful experience
+
+"In large part, what makes something usable is the absence of frustration in using it"
+-- Dana Chisnell, Harvard Author, User Experience researcher
+
+--Communicate the process
+--Provide feedback
+--Hide non-critical features
+--Interactivity is self evident
+
+Which of these universities do you trust?
+-- https://www.academyart.edu
+-- https://www.art.yale.edu
+Which of these authors would you buy a book from?
+-- http://www.laurenoliverbooks.com
+-- https://www.suzannecollinsbooks.com
+Which of these websites would you expect to deliver high quality products?
+-- https://www.amazon.com
+-- https://arngren.net
+
+-- https://www.lingscars.com
+
+Consistency, white space, lack of clutter
+
+Misconceptions:
+It's just a step in the process
+It's easy
+It's not -your- job
+It's optional
+
+https://www.youtube.com/watch?v=v2YlHeEZQsM
+
+Principles of Visual Design (What the user sees):
+
+--Contrast
+--Repetition
+--Alignment
+--Proximity
+
+
+Grids and Spacing
+
+--Columns make up the proportions of the website.
+--Bringing order to your elements
+
+Negative space around columns are called gutters or whitespace.
+--Remain consistent
+--Gets rid of clutter
+--Differentiate between sections
+
+Color Harmony
+--harmonized colors deliver a sense of balance and order
+--makes the difference between obnoxious, and beautiful
+
+Photos
+--Images create visual interest
+
+Typography
+--Visual hierarchy
+--Brings attention to key elements
+--Basic fonts are the standard
+--No more than 2 font families, consistency matters
+
+Go Big
+--Large elements draw attention
+
+
+
+Prototyping
+
+low-fidelity (low-fi)
+--sketch, wireframes
+--simple overview, basic structure
+
+high-fidelity (hi-fi)
+--feels like the real app
+--attention to details
+
+Why prototype?
+--Test out usability
+--Setup before you code
+
+What is a prototype? Link: https://www.uxpin.com/studio/blog/what-is-a-prototype-a-guide-to-functional-ux/
+
+--low-fi sketches happen quick, and cheap, don't overthink
+--low-fi sketches communicate the general idea/message
+
+--high-fi sketches should happen reasonably quick
+--high-fi sketches look like the real thing
+
+Low-fi vs High-fi: https://ed.devmountain.com/materials/f26/slides/design/_images/lofi.png
+
+Color palette generator: https://coolors.co
+Wireframe site: https://www.figma.com
