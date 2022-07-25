@@ -1,0 +1,14 @@
+h1 {
+    background-color: blueviolet;
+    border: 5px dotted black;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+}

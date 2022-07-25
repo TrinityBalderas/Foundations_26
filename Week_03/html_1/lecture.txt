@@ -1,0 +1,285 @@
+What is HTML?
+
+Hypertext Markup Language
+
+What is CSS?
+
+Cascading style sheets
+
+What is front end?
+
+HTML, CSS, and Javascript working together in the browser
+
+Many websites are made up of HTML, CSS, and Javascript working together.
+--HTML is the skeleton
+--CSS is the meat
+--JavaScript is the muscles and organs that make it all work
+
+Mark-up languages
+-- Define a set of rules for a document
+-- Allow processing by both humans and computers
+-- Term evolved from "marking up" documents by editors on authors' manuscripts
+
+HTML
+--Creates the infrastructure of a webpage
+--Defined by a use of elements, also known as tags
+--Tags are semantically defined
+
+Syntax
+--Create an element with an open tag and a closing tag:
+<p> This is a paragraph element </p>
+<nav> This is a nav bar element </nav>
+<header> This is a header element </header>
+--There are a lot of different HTML tags: https://www.w3schools.com/TAgs/default.asp
+--You do not need to memorize them all, you will familiarize yourself with them through use.
+
+--Some elements don't use a closing tag:
+<img src="/images/box.png">
+--Instead they have a single, self-closing tag
+
+--Certain elements have in-built attributes:
+<input type="password"> </input>
+
+--undeclared attributes will use default values
+--to overwrite defaults use this syntax inside an element:
+attribute="value"
+
+--boolean attributes default to false
+--set them to true using these syntaxes:
+<input required="true">
+OR
+<input required>
+
+
+Semantic HTML
+Semantic HTML, and by extension Semantic Code is very important for readability:
+Both your code and especially your HTML should read like English.
+--Helps with Search Engine Optimization
+--Helps other software engineers parse your applications
+--Helps you keep your elements straight
+
+What does Semantic HTML look like?
+The wrong way:
+<div> 
+    <div>
+      <div></div>
+    </div>
+    <div>
+      <div>
+          <p> Title </p>
+          <div> Text </div>
+      </div>
+      <img>
+    </div>
+</div>
+What's happening here?
+--Confusing
+--Nonsensical
+--An affront to the eyes
+
+The right way:
+<main>
+  <header>
+    <h1>
+    </h1>
+  </header>
+  <article>
+    <img>
+    <div>
+      <span> Title </span>
+      <p> Text </p>
+    </div>
+  </article>
+</main>
+What's happening here?
+--Clearly defined sections
+--The tags refer to the content of the element
+--Items are arranged in an order that makes sense
+
+
+Basic HTML Page Structure
+We can easily create an HTML frame by typing a "!" bang followed by pressing tab
+A basic HTML frame looks like this:
+
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link rel="shortcut icon" href="some-URL-or-path-goes-here" />
+      <title>The Title</title>
+    </head>
+    <body>
+    </body>
+  </html>
+
+
+Let's break it down.
+
+<!DOCTYPE html>
+--Not an element, but a declaration
+--Lets browser know to expect HTML in this file
+
+<html> </html>
+--Root element of the file, parent of everything else.
+--lang attribute can be used to specify human languages
+
+<head> </head>
+--Contains metadata
+--Not displayed, but is read by browsers
+--Meta tags provide information to search engines and other sites
+--Use attributes to specify the data for search engines, other sites, or users
+
+<title> </title>
+--Title of the webpage
+--Appears in browser tab
+
+<body> </body>
+--Contains all elements to be rendered on the Page
+--Head and body pattern is common throughout programming
+--Head contains info about something, body contains actual content
+
+<!-- This is an HTML comment -->
+
+
+
+==========================================================================
+
+
+CSS
+--Used to style HTML and create layouts
+--Can respond to some user interaction and create animations
+
+Selecting Elements using Selectors
+--Most basic way to select elements is using their tagnames
+--Affects all elements with that tag
+
+button {
+  background-color: green;
+}
+
+--Can select multiple elements using commas
+
+h1, h2, h3 {
+  color: teal;
+  margin: 20px;
+}
+
+
+--Can select specific children using combinators
+
+
+p > span {
+  padding: 10px;
+}
+-- The ">" selector selects direct children only
+
+
+div span {
+  color: blue;
+}
+-- The " " selector selects all children, grandchildren, etc
+
+
+--You can use CSS directly inside HTML, but it's not commonly done this way.
+
+<button style="color:blue;font-size:12px">Button Text</button>
+
+--Or inside a style tag in the head of your HTML:
+
+  <head>
+      <style>
+        h1 {
+          background-color: blue;
+        }
+      </style>
+      <title>Document</title>
+  </head>
+
+--Neither of these are very common, however, and aren't considered best practice
+
+Instead, we link a .css file to our HTML and write our styling in there:
+
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
+
+Box Model
+margin
+--The white space that seperates one element from another
+border
+--The border of the box that separates the padding from the margin
+padding
+--The padding, or buffer space, between the content of the element and its border
+content
+--The space allocated to the actual content of an element: text, images, etc.
+
+Block Elements
+--take up the width of their parent by default
+--start on a new line (Stack like blocks)
+--height determined by its contents
+--width and height can be changed
+--hold other block elements
+Examples: div, h1, p
+
+Inline Elements
+--width takes up minimum space necessary to contain its content
+--do not start on a new line
+--do not contain other elements
+Examples: button, input, span
+
+Text Properties and Fonts
+font-size: change the size of your font;
+font-weight: increase the boldness of your font;
+color: changes the color of the text of an element, not the background color;
+line-height: determines the space between 2 in-line elements;
+text-align: defines the horizontal alignment of text;
+font-family: determines the font family;
+letter-spacing: determines how much white space is between characters;
+
+We can also bring in fonts that are not native to a browser in a couple of ways.
+--Link to your font in your html:
+
+<head>
+      <link
+          href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap"
+          rel="stylesheet"
+      />
+</head>
+
+--Bring in a font file in your CSS:
+
+@font-face {
+    font-family: pixelfont;
+    src: url('../pixel_font/Pixeltype.ttf');
+}
+
+Background properties can change different things about the background
+background-color: changes the background color of an element;
+background-image: can assign an image to the background of an element, using a url or path;
+background-size: determines the size of a background image;
+background-position: can change the aligment of a background image;
+background-repeat: can be used to set if/how a background image repeats;
+
+
+Units
+Absolute Units:
+cm - centimeters
+mm - millimeters
+in - inches (1in = 96px = 2.54cm)
+px - pixels (1px = 1/96th of 1in)
+pt - points (1pt = 1/72nd of 1in)
+pc - picas (1pc = 12pt)
+
+Relative Units:
+em - Relative to the font-size of an element (2em means 2 times the size of the current font)
+rem - Relative to font-size of the root element
+vw - Relative to 1% of the width of the viewport
+vh - Relative to 1% of the height of the viewport
+% - Relative % of the parent element
+
+
+Default CSS and Reset
+--browsers have native default css settings
+--link a reset.css to get rid of it
