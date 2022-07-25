@@ -54,5 +54,3 @@ console.log(only_poison);
 let second_flying = pokémon.filter( ( pokemon_object ) => pokemon_object.types[1] === "flying" ).map( ( pokemon_object ) => pokemon_object.types[0] )
 // console.log(second_flying);
 
-
-
