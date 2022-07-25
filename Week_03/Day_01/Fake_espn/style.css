@@ -1,0 +1,19 @@
+section>img {
+    height: 163px;
+    width: 240px;
+}
+
+header {
+    background-color: green;
+}
+
+main {
+    background-color: rebeccapurple;
+}
+
+.header {
+    background-color: aquamarine;
+}
+.header>h1 {
+    background-color: orange;
+}

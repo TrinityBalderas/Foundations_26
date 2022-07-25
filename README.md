@@ -34,6 +34,9 @@ https://youtu.be/TGco0lRperA
 |Week 2 Day 4| Week 2 Day 4 (Palindrome Review) | https://youtu.be/bnpUx88fK64 |
 |Week 2 Day 4| Week 2 Day 4 (Design Lecture Part 1) | https://youtu.be/dL0_pAamCzM |
 |Week 2 Day 4| Week 2 Day 4 (Design Lecture Part 2) | https://youtu.be/tEfPLY2zuOU |
+|Week 3 Day 1| Week 3 Day 1 (Most Vowels Review) | https://youtu.be/ea0VrXjwQL0 |
+|Week 3 Day 1| Week 3 Day 1 (HTML and CSS Part 1) | https://youtu.be/BHfVPekIyZ4 |
+|Week 3 Day 1| Week 3 Day 1 (HTML and CSS Part 2) | https://youtu.be/fhWp5s1v-lg |
 
 
 
