@@ -7,12 +7,16 @@
     <title>The big bad dom</title>
 </head>
 <body>
-    <h1>It's morbin time</h1>
+    <h1  class="title">It's morbin time</h1>
 
     <label for="have_you_morbed">Have you morbed</label>
-    <input type="checkbox">
+    <input class="check" type="checkbox">
+    <input class="text" type="text">
+    <input class="age" type="number">
+    <input class="text pass" type="password">
 
     <button style="color:blue;">Time to morb</button>
+    <!-- <button onclick="example(this)" style="color:blue;">Time to morb</button> -->
     <ul>
         <li class="list">
             <a href="google.com">ask me anything</a>
@@ -21,6 +25,48 @@
         <li class="list">We know which one</li>
     </ul>
 
-    <script src="script.js"></script>
+    <article>
+        <h1>Title</h1>
+    </article>
+
+    <div class="dice">
+        <p>roll me!</p>
+        <img id="idDie" class="dice_dice_baby" src="images/dice6.png">
+    </div>
+
+    <div id="container">
+        <div class="pane">
+            <h3>lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+            <h3>lorem</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi consequuntur culpa ad.
+            </p>
+            <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+            <h3>Stuff</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates aut ex dolorum, soluta mollitia culpa officiis officia aspernatur cum veritatis magnam. Deserunt?
+            </p>
+            <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+            <h3>Stuff</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates aut ex dolorum, soluta mollitia culpa officiis officia aspernatur cum veritatis magnam. Deserunt?
+            </p>
+            <button class="remove-button">[x]</button>
+        </div>
+        <div class="pane">
+            <h3>Stuff</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates aut ex dolorum, soluta mollitia culpa officiis officia aspernatur cum veritatis magnam. Deserunt?
+            </p>
+            <button class="remove-button">[x]</button>
+        </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
 </body>
 </html>
