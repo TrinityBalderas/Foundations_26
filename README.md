@@ -37,6 +37,9 @@ https://youtu.be/TGco0lRperA
 |Week 3 Day 1| Week 3 Day 1 (Most Vowels Review) | https://youtu.be/ea0VrXjwQL0 |
 |Week 3 Day 1| Week 3 Day 1 (HTML and CSS Part 1) | https://youtu.be/BHfVPekIyZ4 |
 |Week 3 Day 1| Week 3 Day 1 (HTML and CSS Part 2) | https://youtu.be/fhWp5s1v-lg |
+|Week 3 Day 2| Week 3 Day 2 (Max Profit Review) | https://youtu.be/2VcDNM67Wx8 |
+|Week 3 Day 2| Week 3 Day 2 (Intro To Flex) | https://youtu.be/03DXaHZbeCs |
+|Week 3 Day 2| Week 3 Day 2 (Flex Review) | https://youtu.be/2k1DP0jxq5k |
 
 
 
