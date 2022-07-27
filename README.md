@@ -40,6 +40,10 @@ https://youtu.be/TGco0lRperA
 |Week 3 Day 2| Week 3 Day 2 (Max Profit Review) | https://youtu.be/2VcDNM67Wx8 |
 |Week 3 Day 2| Week 3 Day 2 (Intro To Flex) | https://youtu.be/03DXaHZbeCs |
 |Week 3 Day 2| Week 3 Day 2 (Flex Review) | https://youtu.be/2k1DP0jxq5k |
+|Week 3 Day 3| Week 3 Day 3 (Decode Review) | https://youtu.be/HiTttMyRv58 |
+|Week 3 Day 3| Week 3 Day 3 (DOM Review) | https://youtu.be/06z_mY27WxA |
+|Week 3 Day 3| Week 3 Day 3 (DOM Review Part 2) | https://youtu.be/eqG9uRhurrw |
+
 
 
 

@@ -27,6 +27,7 @@ document.querySelector("input").click()
 // }
 
 let button = document.querySelector("button")
+
 let clicky_click = (event) => {
     console.log(event);
 }
