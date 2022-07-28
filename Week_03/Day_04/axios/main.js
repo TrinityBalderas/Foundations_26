@@ -1,27 +1,62 @@
 // GET REQUEST
 function getTodos() {
-    console.log('GET Request');
+  // axios({
+  //   method: "get",
+  //   url: "https://jsonplaceholder.typicode.com/todos",
+  // }).then( (todos) => {
+  //   console.log(todos);
+  // }).catch( (error) => {
+  //   console.log(error);
+  // })
+  axios('https://jsonplaceholder.typicode.com/todos?_limit=5')
+  .then((todos) => {
+    console.log(todos.data);
+    showOutput(todos)
+  }).catch((error) => {
+    console.log(error);
+  })
 }
 
 // POST REQUEST
 function addTodo() {
-    console.log('POST Request');
+  axios.post("https://jsonplaceholder.typicode.com/todos", {
+    title: "alex has to make me pizza",
+    completed: false
+  }).then( (response) => {
+    console.log(response);
+    showOutput(response)
+  }).catch( (error) => {
+    console.log(error);
+  })
 }
 
 // PUT/PATCH REQUEST
 function updateTodo() {
-    console.log('PUT/PATCH Request');
+  axios.put("https://jsonplaceholder.typicode.com/todos/199", {
+    title: "updated",
+    completed: true
+  }).then( (response) => {
+    console.log(response);
+    showOutput(response)
+  }).catch( (error) => {
+    console.log(error);
+  })
 }
 
 // DELETE REQUEST
 function removeTodo() {
-    console.log('DELETE Request');
+  axios.delete("https://jsonplaceholder.typicode.com/todos/199").then( (response) => {
+    console.log(response);
+    showOutput(response)
+  }).catch( (error) => {
+    console.log(error);
+  })
 }
 
 
 // Show output in browser
 function showOutput(res) {
-    document.getElementById('res').innerHTML = `
+  document.getElementById('res').innerHTML = `
     <div class="card card-body mb-4">
       <h5>Status: ${res.status}</h5>
     </div>
@@ -57,8 +92,3 @@ document.getElementById('get').addEventListener('click', getTodos);
 document.getElementById('post').addEventListener('click', addTodo);
 document.getElementById('update').addEventListener('click', updateTodo);
 document.getElementById('delete').addEventListener('click', removeTodo);
-document.getElementById('sim').addEventListener('click', getData);
-document.getElementById('headers').addEventListener('click', customHeaders);
-document.getElementById('transform').addEventListener('click', transformResponse);
-document.getElementById('error').addEventListener('click', errorHandling);
-document.getElementById('cancel').addEventListener('click', cancelToken);
