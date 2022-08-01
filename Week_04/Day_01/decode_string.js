@@ -26,7 +26,7 @@ const caesar_cypher = (input_string) => {
     for (let i = 1; i < input_string.length ;i++) {
         let character = input_string[i]; //
         // encoded_string = alphabet[character.indexOf + num]
-        for (let j = 1; j < alphabet.length; j++) {
+        for (let j = 0; j < alphabet.length; j++) {
             let alphabet_letter = alphabet[i]
             if ( alphabet_letter === character ) {
                 idx = j;
@@ -42,5 +42,4 @@ const caesar_cypher = (input_string) => {
     return encoded_string;
 }
 console.log(caesar_cypher("2fcjjm"));
-
 
