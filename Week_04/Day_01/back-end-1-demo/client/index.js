@@ -50,3 +50,7 @@ function addToView(dataArr) {
     }
 }
 // const inventory = ['greeting card', 'wagon', 'computer', 'table', 'chair', 'milk', 'sailboat', 'conditioner', 'rusty nail', 'desk']
+
+
+
+
