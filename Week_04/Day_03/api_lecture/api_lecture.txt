@@ -1,0 +1,105 @@
+What is an API?
+
+Application Programming Interface
+
+
+We have already created APIs throughout this course!
+The DOM is an API that allows us to interact with our web pages.
+An API is an address for interacting with an application.
+Your bluetooth devices are APIs, most modern cars have APIs, your phone is an API, and your Internet Router is an API. That smart fridge? An API. That smart watch? API.
+
+Why APIs?
+--provide information to developers
+--receive data about all sorts of things
+Examples:
+--sports data
+--pokemon data
+--star wars data
+--weather data
+--hardware store data
+--real estate data
+--stock market data
+
+You can also create custom scripts for your own smart applications.
+Maybe you want to create a mod for your smart thermometer to set specific temperatures for different times of day. Simply interact with its API to configure its settings.
+
+How do we use APIs?
+Some are accessible through code
+Some are accessible through apps
+Some have built-in user interfaces
+
+Today we'll use URLs
+--endpoints
+--params
+--queries
+
+-----------------------------
+
+RESTful APIs
+
+Representational State Transfer
+A request or response will require/include ALL data, doesn't rely on another request/function
+--allows for a set of standards
+--URLs are uniform and meaningful
+--Client and server are independent
+--HTTP(S) is the protocol
+--Requests are independent
+
+RESTful APIs look a lot like the servers we've been creating in class!
+Different methods can produce different results at the same endpoint.
+
+.get('/albums') // Get a list of albums
+.post('/albums') // Create a new album in our albums list
+.get('/albums/:id') // Get ONE album
+.put('/albums/:id') // Edit ONE album
+.delete('/albums/:id') // Delete ONE album
+
+Endpoints should be uniform, and work in a hierarchy:
+/albums                 // Get a list of all albums
+/albums/:id             // Get a specific album  
+/albums/:id/tracks      // Get a list of tracks inside a specific album
+/albums/:id/tracks/:id  // Get a specific track inside a specific album
+
+
+-------------------------------------------
+Documentation
+All APIs -should- have docs! But some docs are better than others.
+https://developer.spotify.com/documentation/web-api/
+https://swapi.dev/documentation
+https://pokeapi.co
+
+Good documentation will
+--list available endpoints
+--tell you how to format requests
+--tell you what info you'll receive
+--explain rate limits, auth requirements, etc
+
+Many APIs have limits on use!
+Rates can be requests per
+--minute
+--hour
+--day
+--lifetime
+Sometimes the rates will also be capped by your user information
+--API keys
+--IP address
+--User ID
+
+Some APIs may not have rate limits, but still require authentication
+These APIs use your authentication keys to track valuable data:
+--requests made
+--analytics
+Or to require permission for use.
+
+Examples of APIs with authentication:
+Google Maps
+Discord Bots
+Spotify
+
+Examples of user authentication:
+Twitter
+Facebook
+
+=========================================================================
+
+                            POSTMAN
