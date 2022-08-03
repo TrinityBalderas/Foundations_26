@@ -43,9 +43,14 @@ https://youtu.be/TGco0lRperA
 |Week 3 Day 3| Week 3 Day 3 (Decode Review) | https://youtu.be/HiTttMyRv58 |
 |Week 3 Day 3| Week 3 Day 3 (DOM Review) | https://youtu.be/06z_mY27WxA |
 |Week 3 Day 3| Week 3 Day 3 (DOM Review Part 2) | https://youtu.be/eqG9uRhurrw |
-|Week 4 Day 3| Week 4 Day 1 (Caesar Cipher) | https://youtu.be/Fxp-8cj9BKs |
-|Week 4 Day 3| Week 4 Day 1 (Intro To Express part 1) | https://youtu.be/dY4lCNJk4qA |
-|Week 4 Day 3| Week 4 Day 1 (Intro To Express part 2) | https://youtu.be/A9X4_8yNBhU |
+|Week 4 Day 1| Week 4 Day 1 (Caesar Cipher) | https://youtu.be/Fxp-8cj9BKs |
+|Week 4 Day 1| Week 4 Day 1 (Intro To Express part 1) | https://youtu.be/dY4lCNJk4qA |
+|Week 4 Day 1| Week 4 Day 1 (Intro To Express part 2) | https://youtu.be/A9X4_8yNBhU |
+|Week 4 Day 2| Week 4 Day 2 (Back End Part 1) | https://youtu.be/oW-nzuSSI30 |
+|Week 4 Day 2| Week 4 Day 2 (Talking Modules) | https://youtu.be/C1N_188I9p8 |
+|Week 4 Day 2| Week 4 Day 2 (Back End Part 2) | https://youtu.be/7pZsc__ycDY |
+
+
 
 
 
