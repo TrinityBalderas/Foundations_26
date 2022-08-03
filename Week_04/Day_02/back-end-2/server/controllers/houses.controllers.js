@@ -5,6 +5,18 @@ module.exports = {
         console.log("hello");
         res.status(200).send(HOUSES)
     },
+    createHouse: (req, res) => {
+        let { address, price, imageURL } = req.body
+        let newHouse = {
+            id: globalId,
+            address, 
+            price,
+            imageURL
+        }
+        HOUSES.push(newHouse)
+        res.status(200).send(HOUSES)
+        globalId++
+    },
     updateHouse: (req, res) => {
         let { id } = req.params;
         let { type } = req.body;
@@ -12,7 +24,6 @@ module.exports = {
     
         if (HOUSES[index].price <= 10000 && type === 'minus') {
             HOUSES[index].price = 0
-            res.status(200).send(HOUSES);
         } else if (type === 'plus') {
             HOUSES[index].price += 10000;
             res.status(200).send(HOUSES);
@@ -22,5 +33,11 @@ module.exports = {
         } else {
             res.sendStatus(400);
         }
-    }
+    },
+    deleteHouse: (req, res) => {
+        let index = HOUSES.findIndex(elem => elem.id === +req.params.id)
+        HOUSES.splice(index, 1)
+        res.status(200).send(HOUSES)
+    }, 
+
 }
