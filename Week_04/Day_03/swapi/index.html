@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Stop SWAPI time</title>
+</head>
+<body>
+    <div class="container mx-auto p-3">
+        <h2 class="text-center">Star Wars Characters</h2>
+        <form class="p-3">
+            <label class="p-2">Search for </label>
+            <select class="form-select form-select-lg">
+                <option>people</option>
+                <option>planets</option>
+            </select>
+            <label class="p-2">id: </label>
+            <input class="form-control id" type="number" class="id" value="1" />
+            <button type="submit" class="btn btn-success mt-3">Find</button>
+        </form>
+        <section class="swapi-content">
+            <div class="card p-3">Here comes the data :)</div>
+        </section>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
