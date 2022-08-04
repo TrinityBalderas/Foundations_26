@@ -49,6 +49,11 @@ https://youtu.be/TGco0lRperA
 |Week 4 Day 2| Week 4 Day 2 (Back End Part 1) | https://youtu.be/oW-nzuSSI30 |
 |Week 4 Day 2| Week 4 Day 2 (Talking Modules) | https://youtu.be/C1N_188I9p8 |
 |Week 4 Day 2| Week 4 Day 2 (Back End Part 2) | https://youtu.be/7pZsc__ycDY |
+|Week 4 Day 3| Week 4 Day 3 (Parens Valid) | https://tinyurl.com/38afmxfu |
+|Week 4 Day 3| Week 4 Day 3 (API's Part 1) | https://tinyurl.com/3a66w4ax |
+|Week 4 Day 3| Week 4 Day 3 (API's Part 2) | https://tinyurl.com/bddvv2cr |
+|Week 4 Day 3| Week 4 Day 3 (API SWAPI Demo) | https://tinyurl.com/mrydbr6n |
+
 
 
 
