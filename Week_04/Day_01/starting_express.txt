@@ -21,6 +21,8 @@ app.listen( 8000, () => {
     console.log("we are live....");
 })// puts our server live
 --------------------------------------
+test your code...see if it runs >.>
+`nodemon server.js`
 
 
 

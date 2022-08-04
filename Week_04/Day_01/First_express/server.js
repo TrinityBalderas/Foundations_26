@@ -22,11 +22,6 @@ app.get("/api/magic_set", (request, respond) => {
 })
 
 app.post("/api/magic_set", (request, response) => {
-    // console.log(request.body);
-    // const set_to_add = {
-    //     id: magic_set.length + 1,
-    //     set_name: request
-    // }
     magic_set.push(request.body)
     response.status(200).json({message: "ok"})
 })
