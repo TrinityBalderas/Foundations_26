@@ -1,0 +1,46 @@
+-- CREATE TABLE melons (
+--   id SERIAL PRIMARY KEY,
+--   name VARCHAR(20) NOT NULL,
+--   price FLOAT NOT NULL,
+--   is_tasty BOOLEAN NOT NULL
+-- );
+
+-- INSERT INTO melons( name, price, is_tasty )
+-- VALUES( 'Honeydew', 10.00, False );
+
+-- INSERT INTO melons( name, price, is_tasty )
+-- VALUES( 'Honeydew', 10.00, False ),
+-- 			( 'Wawamelon', 2.50, True ),
+--       ( 'Galia', 5.00, False ),
+--       ( 'Trinity Melon', 3.00, False ),
+--       ( 'Skate Melon', 1.00, False ),
+--       ( 'Colins crappy melon', 5.00, True),
+--       ( 'PokeMelon', 3.00, True ),
+--       ( 'Danke Melon', 3.00, False );
+
+-- SELECT name AS melon_names, price AS cost 
+-- FROM melons
+-- WHERE name LIKE '%ke%'
+-- AND is_tasty = False;
+
+-- SELECT MIN(price) 
+-- FROM melons;
+
+-- SELECT price, COUNT(*)
+-- FROM melons
+-- GROUP BY price
+-- ORDER BY COUNT(*) DESC
+
+-- SELECT *
+-- FROM melons
+-- LIMIT 2
+
+-- UPDATE melons
+-- SET name = 'Lemon Melon'
+-- WHERE id = 2
+
+SELECT *
+FROM melons
+
+-- DELETE FROM melons
+-- WHERE name = 'Honeydew';
