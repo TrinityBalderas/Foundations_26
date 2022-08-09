@@ -59,7 +59,6 @@ function submit_set(e) {
 
 function edit_set(e , id) {
     e.preventDefault()
-    console.log("who talking ------------------------------------------");
     let edit_set = document.querySelector(`.edit-magic-set-${id}`)
 
     let edit_set_obj = {
@@ -83,6 +82,7 @@ function create_set_card(set) {
         <button type="submit" value="submit">Edit</button>
     </form>
     `
+    //make an event listner here
     magic_set_container.appendChild(magic_set_card)
 }
 

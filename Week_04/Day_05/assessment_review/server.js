@@ -35,9 +35,7 @@ app.post("/api/magic_set", (request, response) => {
 // { id: 1, set_name: "KTK"},
 app.put("/api/magic_set/:set_id", (request, response)=> {
     const set = magic_set.find( (set_object) => set_object.id === parseInt(request.params.set_id))
-    console.log(set);
     set.set_name = request.body.set_name
-    console.log("set after", set);
     response.status(200).send(magic_set)
 });
 
