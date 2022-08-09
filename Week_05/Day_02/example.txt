@@ -1,0 +1,39 @@
+Students                Enrollment                    Classes
+Alex                     Class id                    Foundations
+                        Student id
+
+
+
+Username and password
+Posts
+Likes, comments
+friends list
+user info
+email address
+photos
+protected information
+
+Users table --
+Username, password, email address
+
+Posts table -- Posts
+postlikes table -- post id, user id
+commentslikes table --  user id, comment id
+Comments table -- comments, user id
+
+Protected info table -- social security, user id
+
+Credit card table -- Credit card id,user id, type of card, card number, expiration date
+
+
+One-to-many
+--user to credit card
+--user to post
+--user to comment
+
+Many-to-many
+--user to friends
+
+
+One-to-One
+--user to protected
