@@ -53,6 +53,8 @@ https://youtu.be/TGco0lRperA
 |Week 4 Day 3| Week 4 Day 3 (API's Part 1) | https://tinyurl.com/3a66w4ax |
 |Week 4 Day 3| Week 4 Day 3 (API's Part 2) | https://tinyurl.com/bddvv2cr |
 |Week 4 Day 3| Week 4 Day 3 (API SWAPI Demo) | https://tinyurl.com/mrydbr6n |
+|Week 5 Day 1| Week 5 Day 1 (Intro To SQL) | https://tinyurl.com/2xw88txx |
+|Week 5 Day 1| Week 5 Day 1 (Review) | https://tinyurl.com/2sdnpf3c |
 
 
 
