@@ -156,3 +156,16 @@ let call_first_name = first_name => {
 }
 
 first(names_array, call_first_name)
+
+let originalArray= [1,2,3,4]
+function addTwo(num, i, arr){
+    return num + 2;
+}
+function map(array,callback){
+    let newArray=[];
+    for (let i=0; i<array.length; i++){
+        newArray.push(callback(array[i], i, array))
+    };
+    return newArray
+}
+console.log(map(originalArray, addTwo));
